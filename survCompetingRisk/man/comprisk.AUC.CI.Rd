@@ -77,13 +77,15 @@ comprisk.AUC.CI(times, status1, status2, x, Z = NULL, predict.time, type, smooth
 
 }
 \references{
-%% ~put references to the literature/web site here ~
-Zheng Y, Cai T, Jin Y, Feng Z. Evaluating prognostic accuracy of biomarkers under competing risk. In press, Biometrics for further description of methods. 
 
-}
-\author{
-%%  ~~who you are~~
-Marshall Brown and Yingye Zheng 
+Zheng Y, Cai T, Jin Y, Feng Z. Evaluating prognostic accuracy of biomarkers under
+competing risk. Biometrics. 2012 Jun;68(2):388-96.
+
+
+Zheng Y, Cai T, Feng Z, and Stanford J. Semiparametric Models of Time-dependent
+Predictive Values of Prognostic Biomarkers. Biometrics. 2010, 66: 50-60.
+
+
 }
 
 
@@ -137,16 +139,5 @@ myROC.type2 <- comprisk.ROC( times = crdata$times,
                              type = 2)
 #estimate                                                    
 myROC.type2$AUC
-}
-\references{
-
-Zheng Y, Cai T, Jin Y, Feng Z. Evaluating prognostic accuracy of biomarkers under
-competing risk. Biometrics. 2012 Jun;68(2):388-96.
-
-
-Zheng Y, Cai T, Feng Z, and Stanford J. Semiparametric Models of Time-dependent
-Predictive Values of Prognostic Biomarkers. Biometrics. 2010, 66: 50-60.
-
-
 }
 
