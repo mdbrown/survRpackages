@@ -1,0 +1,28 @@
+
+
+data(SimData)
+
+
+tmp <- survEstMeasures(time =SimData$survTime, 
+                event = SimData$status, 
+                marker = SimData$Y, predict.time = 2, 
+                 cutpoint = 0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
