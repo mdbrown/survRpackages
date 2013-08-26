@@ -13,4 +13,4 @@ License: GPL-2
 Depends:
     survival,
     splines
-
+URL: https://github.com/mdbrown/survRpackages
