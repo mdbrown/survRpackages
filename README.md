@@ -1,7 +1,7 @@
 survRpackages
 =============
 
-This folder contains R packages regarding risk prediction with survival data that I have developed in collaboration with Yingye Zheng. The packages are:
+This folder contains R packages pertaining to risk prediction with time-to-event data that I have developed in collaboration with Yingye Zheng. The packages are:
 
 - **survAccuracyMeasures**:  provides functions to estimate the AUC, TPR(c), FPR(c), PPV(c), and NPV(c) for for a specific timepoint and marker cutoff value c. Standard errors and confidence intervals are also computed. Either analytic or bootstrap standard errors can be computed.
 
