@@ -1,7 +1,13 @@
 survNRI
 ============================
 
-This package contains a single function `survNRI` which calculates the NRI for survival data using up to five different estimators. The different methods available are: "KM" = Kaplan- Meier estimator, "IPW" = Inverse probability weighted estimator, "SmoothIPW" = Smooth inverse probability weighted estimator, "SEM" = Semi-parametric estimator, "Combined"= Combined estimator as described (along with all other estimates) in the reference paper:
+This package contains a single function `survNRI` which calculates the NRI for survival data using up to five different estimators. The different methods available are:
+
+- *KM* = Kaplan- Meier estimator 
+- *IPW* = Inverse probability weighted estimator 
+- *SmoothIPW* = Smooth inverse probability weighted estimator 
+- *SEM* = Semi-parametric estimator
+- *Combined*= Combined estimator as described (along with all other estimates) in the reference paper:
 
 *Lifetime Data Analysis* 2012 Dec 20. [Epub ahead of print] Evaluating incremental values from new predictors with net reclassification improvement in survival analysis. Zheng Y, Parast L, Cai T, Brown M. PMID: 23254468
 
@@ -53,11 +59,11 @@ survNRI(time = "stime", event = "status", model1 = "y1", model2 = c("y1", "y2"),
 ## 
 ##  method     |  event NRI              non-event NRI             NRI 
 ## -------------------------------------------------------------------------------
-##   KM        |  0.529 (0.472,0.585)   0.380 (0.327,0.350)   0.297 (0.224,0.453)   
-##   IPW       |  0.531 (0.478,0.583)   0.380 (0.324,0.357)   0.301 (0.220,0.461)   
-##   SmoothIPW |  0.527 (0.468,0.586)   0.381 (0.327,0.345)   0.291 (0.218,0.455)   
-##   SEM       |  0.566 (0.530,0.601)   0.365 (0.303,0.463)   0.401 (0.196,0.570)   
-##   Combined  |  0.544 (0.495,0.593)   0.374 (0.320,0.393)   0.339 (0.230,0.484)   
+##   KM        |  0.529 (0.471,0.586)   0.380 (0.324,0.353)   0.297 (0.243,0.434)   
+##   IPW       |  0.531 (0.470,0.591)   0.380 (0.325,0.355)   0.301 (0.244,0.436)   
+##   SmoothIPW |  0.527 (0.466,0.588)   0.381 (0.327,0.345)   0.291 (0.247,0.426)   
+##   SEM       |  0.566 (0.500,0.631)   0.365 (0.306,0.460)   0.401 (0.187,0.579)   
+##   Combined  |  0.544 (0.476,0.612)   0.374 (0.319,0.395)   0.339 (0.213,0.500)   
 ## -------------------------------------------------------------------------------
 ```
 
@@ -81,9 +87,9 @@ tmp
 ## 
 ##  method     |  event NRI              non-event NRI             NRI 
 ## -------------------------------------------------------------------------------
-##   SmoothIPW |  0.565 (0.517,0.592)   0.379 (0.336,0.419)   0.373 (0.198,0.450)   
-##   SEM       |  0.582 (0.545,0.625)   0.368 (0.318,0.401)   0.428 (0.293,0.542)   
-##   Combined  |  0.573 (0.532,0.610)   0.374 (0.335,0.413)   0.397 (0.244,0.458)   
+##   SmoothIPW |  0.565 (0.499,0.652)   0.379 (0.362,0.437)   0.373 (0.175,0.576)   
+##   SEM       |  0.582 (0.545,0.623)   0.368 (0.337,0.435)   0.428 (0.241,0.497)   
+##   Combined  |  0.573 (0.503,0.632)   0.374 (0.366,0.434)   0.397 (0.228,0.514)   
 ## -------------------------------------------------------------------------------
 ```
 
@@ -108,18 +114,18 @@ tmp$CI
 ```
 ## $NRI.event
 ##            SmoothIPW    SEM Combined
-## lowerbound    0.5167 0.5454   0.5320
-## upperbound    0.5919 0.6249   0.6104
+## lowerbound    0.4990 0.5449   0.5030
+## upperbound    0.6516 0.6230   0.6316
 ## 
 ## $NRI.nonevent
 ##            SmoothIPW    SEM Combined
-## lowerbound    0.3357 0.3182   0.3353
-## upperbound    0.4191 0.4007   0.4128
+## lowerbound    0.3621 0.3367   0.3658
+## upperbound    0.4368 0.4355   0.4341
 ## 
 ## $NRI
 ##            SmoothIPW    SEM Combined
-## lowerbound    0.1979 0.2933   0.2443
-## upperbound    0.4500 0.5420   0.4580
+## lowerbound    0.1748 0.2411   0.2282
+## upperbound    0.5764 0.4974   0.5139
 ```
 
 
