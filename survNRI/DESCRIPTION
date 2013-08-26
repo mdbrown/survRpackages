@@ -8,4 +8,4 @@ Maintainer: Marshall Brown <mdbrown@fhcrc.org>
 Description: Calculate NRI statistic for survival data using five different estimators. 
 License: GPL-2
 Depends: MASS, survival
-url: https://github.com/mdbrown/survRpackages/survNRI
+url: https://github.com/mdbrown/survRpackages
