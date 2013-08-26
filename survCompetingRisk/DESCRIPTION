@@ -8,3 +8,4 @@ Maintainer: Marshall Brown <mdbrown@fhcrc.org>
 Depends: survival
 Description: This package aims to help to evaluate the prognostic accuracy of a marker with multiple competing risk events.Functions to calculate the AUC, ROC, PPV, and NPV are provided. A discrete covariate Z, if available, can be included. 
 License: GPL-2
+url: https://github.com/mdbrown/survRpackages
