@@ -186,12 +186,7 @@ hljs.initHighlightingOnLoad();
 
 <p>This R package estimates accuracy measures for risk prediction markers from survival data. It consists of the function <code>survEstMeasures</code> which estimates the \( AUC \), \( TPR(c) \), \( FPR(c) \), \( PPV(c) \), and \( NPV(c) \) for for a specific timepoint and marker cutoff value c. Standard errors, and confidence intervals are also computed. Either analytic or bootstrap standard errors can be computed.</p>
 
-<p>For more information, see:</p>
-
-<ul>
-<li><p>Pepe MS, Zheng Y, Jin Y. Evaluating the ROC performance of markers for future events. <em>Lifetime Data Analysis.</em> 2008, 14: 86-113.</p></li>
-<li><p>Zheng Y, Cai T, Pepe MS, Levy, W. Time-dependent predictive values of prognostic biomarkers with failure time outcome. <em>JASA</em> 2008, 103: 362-368.</p></li>
-</ul>
+<p>For more information, see references below. </p>
 
 <h2>Tutorial</h2>
 
@@ -246,9 +241,9 @@ tmp
 
 <pre><code>## 
 ##         estimate     se      lower 0.95  upper 0.95
-## coef       1.131     0.071         0.993       1.269 
-## AUC        0.793     0.016         0.759       0.824 
-## TPR(c)     0.806     0.021         0.761       0.845 
+## coef       1.131     0.070         0.993       1.268 
+## AUC        0.793     0.016         0.760       0.823 
+## TPR(c)     0.806     0.024         0.756       0.848 
 ## 
 ##  marker cutpoint: c = 0
 </code></pre>
@@ -267,11 +262,17 @@ tmp$CIbounds
 </code></pre>
 
 <pre><code>##         coef    AUC    TPR
-## upper 1.2691 0.8236 0.8445
-## lower 0.9926 0.7595 0.7611
+## upper 1.2683 0.8234 0.8484
+## lower 0.9934 0.7597 0.7556
 </code></pre>
 
 <p>For more information see <code>?survEstMeasures</code>. </p>
+
+<h3>References</h3>
+
+<p>Pepe MS, Zheng Y, Jin Y. Evaluating the ROC performance of markers for future events. <em>Lifetime Data Analysis.</em> 2008, 14: 86-113.</p>
+
+<p>Zheng Y, Cai T, Pepe MS, Levy, W. Time-dependent predictive values of prognostic biomarkers with failure time outcome. <em>JASA</em> 2008, 103: 362-368.</p>
 
 </body>
 

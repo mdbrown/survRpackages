@@ -7,9 +7,9 @@ This package contains a single function `survNRI` which calculates the NRI for s
 - *IPW* = Inverse probability weighted estimator 
 - *SmoothIPW* = Smooth inverse probability weighted estimator 
 - *SEM* = Semi-parametric estimator
-- *Combined*= Combined estimator as described (along with all other estimates) in the reference paper:
+- *Combined*= Combined estimator as described (along with all other estimates) in the reference paper.
 
-*Lifetime Data Analysis* 2012 Dec 20. [Epub ahead of print] Evaluating incremental values from new predictors with net reclassification improvement in survival analysis. Zheng Y, Parast L, Cai T, Brown M. PMID: 23254468
+### Tutorial
 
 
 
@@ -59,11 +59,11 @@ survNRI(time = "stime", event = "status", model1 = "y1", model2 = c("y1", "y2"),
 ## 
 ##  method     |  event NRI              non-event NRI             NRI 
 ## -------------------------------------------------------------------------------
-##   KM        |  0.529 (0.471,0.586)   0.380 (0.324,0.353)   0.297 (0.243,0.434)   
-##   IPW       |  0.531 (0.470,0.591)   0.380 (0.325,0.355)   0.301 (0.244,0.436)   
-##   SmoothIPW |  0.527 (0.466,0.588)   0.381 (0.327,0.345)   0.291 (0.247,0.426)   
-##   SEM       |  0.566 (0.500,0.631)   0.365 (0.306,0.460)   0.401 (0.187,0.579)   
-##   Combined  |  0.544 (0.476,0.612)   0.374 (0.319,0.395)   0.339 (0.213,0.500)   
+##   KM        |  0.529 (0.457,0.600)   0.380 (0.349,0.328)   0.297 (0.217,0.460)   
+##   IPW       |  0.531 (0.461,0.600)   0.380 (0.345,0.336)   0.301 (0.211,0.470)   
+##   SmoothIPW |  0.527 (0.456,0.598)   0.381 (0.350,0.323)   0.291 (0.219,0.454)   
+##   SEM       |  0.566 (0.528,0.603)   0.365 (0.319,0.447)   0.401 (0.224,0.542)   
+##   Combined  |  0.544 (0.478,0.609)   0.374 (0.341,0.372)   0.339 (0.221,0.492)   
 ## -------------------------------------------------------------------------------
 ```
 
@@ -87,9 +87,9 @@ tmp
 ## 
 ##  method     |  event NRI              non-event NRI             NRI 
 ## -------------------------------------------------------------------------------
-##   SmoothIPW |  0.565 (0.499,0.652)   0.379 (0.362,0.437)   0.373 (0.175,0.576)   
-##   SEM       |  0.582 (0.545,0.623)   0.368 (0.337,0.435)   0.428 (0.241,0.497)   
-##   Combined  |  0.573 (0.503,0.632)   0.374 (0.366,0.434)   0.397 (0.228,0.514)   
+##   SmoothIPW |  0.565 (0.475,0.621)   0.379 (0.361,0.468)   0.373 (0.190,0.440)   
+##   SEM       |  0.582 (0.540,0.617)   0.368 (0.336,0.452)   0.428 (0.289,0.493)   
+##   Combined  |  0.573 (0.476,0.611)   0.374 (0.357,0.454)   0.397 (0.193,0.451)   
 ## -------------------------------------------------------------------------------
 ```
 
@@ -114,24 +114,27 @@ tmp$CI
 ```
 ## $NRI.event
 ##            SmoothIPW    SEM Combined
-## lowerbound    0.4990 0.5449   0.5030
-## upperbound    0.6516 0.6230   0.6316
+## lowerbound    0.4748 0.5398   0.4756
+## upperbound    0.6205 0.6169   0.6114
 ## 
 ## $NRI.nonevent
 ##            SmoothIPW    SEM Combined
-## lowerbound    0.3621 0.3367   0.3658
-## upperbound    0.4368 0.4355   0.4341
+## lowerbound    0.3614 0.3356   0.3573
+## upperbound    0.4678 0.4525   0.4543
 ## 
 ## $NRI
 ##            SmoothIPW    SEM Combined
-## lowerbound    0.1748 0.2411   0.2282
-## upperbound    0.5764 0.4974   0.5139
+## lowerbound    0.1905 0.2889   0.1931
+## upperbound    0.4397 0.4934   0.4510
 ```
 
 
 
 for more information see `?survNRI`. 
 
+### References 
+
+*Lifetime Data Analysis* 2012 Dec 20. [Epub ahead of print] Evaluating incremental values from new predictors with net reclassification improvement in survival analysis. Zheng Y, Parast L, Cai T, Brown M. PMID: 23254468
 
 
 

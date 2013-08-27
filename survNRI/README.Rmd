@@ -7,9 +7,9 @@ This package contains a single function `survNRI` which calculates the NRI for s
 - *IPW* = Inverse probability weighted estimator 
 - *SmoothIPW* = Smooth inverse probability weighted estimator 
 - *SEM* = Semi-parametric estimator
-- *Combined*= Combined estimator as described (along with all other estimates) in the reference paper:
+- *Combined*= Combined estimator as described (along with all other estimates) in the reference paper.
 
-*Lifetime Data Analysis* 2012 Dec 20. [Epub ahead of print] Evaluating incremental values from new predictors with net reclassification improvement in survival analysis. Zheng Y, Parast L, Cai T, Brown M. PMID: 23254468
+### Tutorial
 
 
 ```{r}
@@ -49,6 +49,9 @@ tmp$CI
 
 for more information see `?survNRI`. 
 
+### References 
+
+*Lifetime Data Analysis* 2012 Dec 20. [Epub ahead of print] Evaluating incremental values from new predictors with net reclassification improvement in survival analysis. Zheng Y, Parast L, Cai T, Brown M. PMID: 23254468
 
 
 
