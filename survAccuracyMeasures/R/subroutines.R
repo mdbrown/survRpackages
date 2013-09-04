@@ -1,4 +1,3 @@
-
 #function to estimate the SE using monte carlo methods
 logit = function(x) log(x/(1-x))
 expit = function(x) exp(x)/(1+exp(x))
@@ -125,7 +124,7 @@ Est.Wexp<-function(data,N,RT.out,predict.time,uu0Vec,typexVec,typeyVec, resid.sc
     np = dim(Y)[2]
   
     fit  = coxph(Surv(data$times,data$status)~Y, 
-                method="breslow", weight=data$weights)   
+                method="breslow", weights=data$weights)   
     
     # Doing riskmat, haz0 and time by hand since coxph.detail appears 
     #  to be a newer R feature & some users may have not updated their R.
