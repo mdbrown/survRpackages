@@ -30,7 +30,7 @@ getEstimates <- function(data,
   
      data.s <- data[order(-data$xi),] #data sorted by stime
 
-     fit<-coxph( Surv(data$xi,data$di) ~ data$Y, weight = data$wi, method = "breslow")   #original data, sorting doesn't matter. 
+     fit<-coxph( Surv(data$xi,data$di) ~ data$Y, weights = data$wi, method = "breslow")   #original data, sorting doesn't matter. 
      betahat<-fit$coef                                               
   
       
