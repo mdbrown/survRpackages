@@ -5,7 +5,7 @@
 #' @return NULL
 
 
-print.SurvAM <- function(x){
+print.SurvAM <- function(x, ...){
   #methods to print an object of class "SurvAM"
   # want to display the estimates, standard errors, and confidence intervals
   # just like coxph
