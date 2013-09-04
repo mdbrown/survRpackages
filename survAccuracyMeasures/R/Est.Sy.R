@@ -5,7 +5,7 @@ EST.Sy<-function(data, predict.time) {
   data <- data[order(-data$xi),]
   Y  <- as.matrix(data[,!is.element(names(data), c("di", "xi", "wi","vi"))])
   
-  fit<-coxph( Surv(data$xi,data$di) ~ Y, weight = data$wi)
+  fit<-coxph( Surv(data$xi,data$di) ~ Y, weights = data$wi)
   
   beta<-fit$coef
   linearY <- Y%*%beta 
