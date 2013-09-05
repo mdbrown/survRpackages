@@ -73,9 +73,7 @@ comprisk.PPV.CI(times, status1, status2, x, Z = NULL, predict.time, type, smooth
 }
 \item{sigma}{ Tuning parameter to be set when smooth = TRUE. The default value of sigma = sd(x)/length(x)^1/3}
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
