@@ -17,8 +17,4 @@
 \value{
   NULL
 }
-\description{
-  Print an object of class SurvAM--output from
-  survEstMeasures
-}
 
