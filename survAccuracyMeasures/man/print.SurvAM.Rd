@@ -5,7 +5,7 @@
   print.SurvAM(x, ...)
 }
 \arguments{
-  \item{x,output}{from the function survEstMeasures}
+  \item{x}{output from the function survEstMeasures}
 }
 \value{
   NULL
