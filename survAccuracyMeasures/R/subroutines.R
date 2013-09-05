@@ -131,6 +131,7 @@ Est.Wexp<-function(data,N,RT.out,predict.time,uu0Vec,typexVec,typeyVec, resid.sc
     #    Note: this hazard is frequently normalized,
     #    by multiplying by exp(mean(data$Y)*fit$coef), but that is 
     #    not necessary here, as our haz0 below doesn't want it.
+    status <- NULL
     rrk      =  exp(data$linearY)
     dataD    =  subset(data[order(data$times),],status==1)
     riskmat  =  t(sapply(data$times,function(x) x >= dataD$times))
