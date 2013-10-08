@@ -17,5 +17,5 @@ R packages for prospective biomarker validation with time-to-event data develope
 ### Power Calculations
 [Shiny](http://www.rstudio.com/shiny/) web applications to simulate power for risk prediction accuracy measures for time-to-event data using semi-parametric accuracy estimates.
 
-- [**Cohort data**]()
+- [**Cohort data**](http://glimmer.rstudio.com/mdbrown/PowerSAM/)
 - **Case-Cohort data** (coming soon!)
