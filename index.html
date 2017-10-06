@@ -17,9 +17,9 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
 
-          <h1 id="project_title">Prospective biomarker validation</h1>
-          <h2 id="project_tagline">A suite of R packages for survival data</h2>
-          <a id="forkme_banner" href="https://github.com/mdbrown/survRpackages">View on GitHub</a>
+          <h1 id="project_title">Zheng lab software resources </h1>
+          <h2 id="project_tagline">A suite of R packages for prospective biomarker validation with survival data</h2>
+        <!-- HEADER   <a id="forkme_banner" href="https://github.com/mdbrown/survRpackages">View on GitHub</a> -->
 
 
         </header>
@@ -32,14 +32,28 @@
 
 <h3>
 <a name="estimation" class="anchor" href="#estimation"><span class="octicon octicon-link"></span></a>R packages</h3>
+<strong> Biomarker evaluation with survival data </strong>
+<ul>
+<li> Accuracy summary measures: <a href="http://mdbrown.github.io/survAccuracyMeasures/"><strong>survAccuracyMeasures</strong></a>  <p><em> Estimate the AUC, TPR(c), FPR(c), PPV(c), and NPV(c) for for a specific timepoint and marker cutoff value c using non-parametric and semi-parametric methods. Bootstrap standard errors and confidence intervals are also computed. </em></p></li>
+
+<li> Competing risk outcome: <a href="http://mdbrown.github.io/survCompetingRisk/"><strong>survCompetingRisk</strong></a> <p><em> Evaluate the prognostic accuracy of a marker with multiple competing risk events. Functions to calculate the AUC, ROC, PPV, and NPV are provided. A discrete covariate Z, if available, can be included.</em></p></li>
+
+<li> Incremental value evaluation: <a href="http://mdbrown.github.io/survNRI/"><strong>survNRI</strong></a>  <p><em> Calculate the net reclassification index (NRI) statistic for survival data using five different estimators.</em></p></li>
+
+</ul>
+<strong> Prediction with longitudinal biomarkers </strong>
+<ul>
+<li>Longitudinal Prediction:<a href="http://rpubs.com/mdbrown/partlyconditional"><strong>partlyconditional</strong></a>  <p><em> Provides functions to fit partly conditional models, a class of models useful for clinical contexts where long term follow-up information is available on a patient population, along with multiple measures of patient health and other biological markers collected across time. Interest lies in modeling a patients’ future risk of an adverse event, given survival to time s, as a function of longitudinal marker history recorded up to time s. </em></p> </li>
+<li> LongitudinalAccuracy: longsurvAccuracyMeasures <p><em>In development</p></em></li>
+<li> Two phase design with longitudinal data: longsurvMarkerTwoPhase  <p><em>In development</p></em> </li>
+</ul>
+<strong> Two phase biomarker study design </strong>
 
 <ul>
-<li><a href="http://mdbrown.github.io/AIPWmeasures/"><strong>AIPWmeasures</strong></a>: Estimate measures of predictive accuracy using augmented inverse probability weights for two-phase biomarker validation studies. </li>
-<li><a href="http://rpubs.com/mdbrown/partlyconditional"><strong>partlyconditional</strong></a>: Fit partly conditional Cox and logistic models using data with repeated marker measures and time-to-event outcome. </li>
-<li><a href="http://mdbrown.github.io/survAccuracyMeasures/"><strong>survAccuracyMeasures</strong></a>: Estimate the AUC, TPR(c), FPR(c), PPV(c), and NPV(c) for for a specific timepoint and marker cutoff value c using non-parametric and semi-parametric methods. Bootstrap standard errors and confidence intervals are also computed. </li>
-<li><a href="http://mdbrown.github.io/survMarkerTwoPhase/"><strong>survMarkerTwoPhase</strong></a>: Evaluate the prognostic accuracy of a marker under two phase designs (case-cohort and nested case control designs).</li>
-<li><a href="http://mdbrown.github.io/survCompetingRisk/"><strong>survCompetingRisk</strong></a>: Evaluate the prognostic accuracy of a marker with multiple competing risk events. Functions to calculate the AUC, ROC, PPV, and NPV are provided. A discrete covariate Z, if available, can be included.</li>
-<li><a href="http://mdbrown.github.io/survNRI/"><strong>survNRI</strong></a>: Calculate the net reclassification index (NRI) statistic for survival data using five different estimators.</li>
+
+<li>  Two phase design with survival data:<a href="http://mdbrown.github.io/survMarkerTwoPhase/"><strong>survMarkerTwoPhase</strong></a> <p><em> Evaluate the prognostic accuracy of a marker under two phase designs (case-cohort and nested case control designs).</p></em></li>
+<li>Two phase design with survival data (efficient and flexible estimation): AIPWmeasure
+<a href="http://mdbrown.github.io/AIPWmeasures/"><strong>AIPWmeasures</strong></a> <p><em> Estimate measures of predictive accuracy using augmented inverse probability weights for two-phase biomarker validation studies. </p></em></li>
 </ul><h3>
 <a name="power-calculations" class="anchor" href="#power-calculations"><span class="octicon octicon-link"></span></a>Power Calculations</h3>
 
